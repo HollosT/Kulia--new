@@ -45,6 +45,10 @@ p {
   font-size: 4vw;
 }
 
+li {
+  font-size: 4.5vw;
+}
+
 h1 {
   color: var(--dark-brown);
   font-weight: 600;
@@ -376,7 +380,7 @@ i {
   }
 
   /* For smaller mobile devices */
-@media screen and (min-width: 300px) and (max-width: 380px) {
+@media screen and (min-width: 300px) {
   .nav-bar{
     padding-bottom: 20px;
     padding: 2vw;
@@ -395,8 +399,6 @@ i {
 
   .tradition-h2 {
     color: var(--dark-brown);
-    /* font-size: 8vw; */
-    /* position: relative; */
   }
 
   /* MENU SECTON */
@@ -484,8 +486,8 @@ i {
   }
 
   .index .event-card img {
-    max-width: 50%;
-    height: auto;
+    width: 40vw;
+    height: 40vw;
   }
 
   .container {
@@ -727,24 +729,10 @@ i {
     display: none;
   }
 
-  .four-amigos-image {
-    width: 85vw;
-    margin-left: 2vw;
-  }
-
   .we-are-kulia,
   .our-place,
   .surroundings {
     padding: 6vw;
-  }
-
-  .we-are-kulia p,
-  .our-place p {
-    margin: 3vh 0;
-  }
-
-  .our-place img {
-    width: 100%;
   }
 
   .surroundings h2,
@@ -773,8 +761,8 @@ i {
   }
 
   .surroundings-img {
-    height: 70%;
     width: 100%;
+    height: auto;
   }
 
   .event-div .surroundings-p {
@@ -788,9 +776,14 @@ i {
     gap: 1vh;
   }
 
+  .we-are-kulia, .our-place, .surroundings {
+    flex-direction: column;
+    gap: 4vw;
+  }
+
   /********* MEDIA QUERIES FOR SMALLER TABLET *********/
 
-  @media screen and (min-width: 480px) and (max-width: 650px) {
+  @media screen and (min-width: 480px) {
 
     h1 {
       font-size: 7vw;
@@ -817,6 +810,9 @@ i {
       font-size: 2vw;
     }
 
+    li {
+      font-size: 2.5vw;
+    }
     /* sections paddings */
     section,
     footer {
@@ -907,6 +903,7 @@ i {
     }
 
     .hero-img .h1-line {
+      width: 20vw;
       position: absolute;
       left: 29%;
       top: 30%;
@@ -965,11 +962,15 @@ i {
     }
 
     .menu-home h4 {
-      padding-top: 7vw;
+      padding-top: 4vw;
     }
 
     /* ******************************** */
     /* EVENTS  */
+
+    .event-div {
+      padding: 1.5vw 1vw;
+    }
 
     .event-div span {
       line-height: 3.5vh;
@@ -977,16 +978,17 @@ i {
       font-family: "Quicksand", sans-serif;
     }
 
-    .event-card img {
-      max-width: 100%;
+
+    .index .event-card img {
+      width: 100%;
       height: auto;
     }
 
+
     .event-card {
-      display: flex;
       flex-direction: column;
       box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
-      padding: 1vw;
+      max-width: 40vw;
       border-radius: 2%;
       -webkit-border-radius: 2%;
       -moz-border-radius: 2%;
@@ -996,6 +998,7 @@ i {
 
     .container {
       flex-direction: row;
+      justify-content: center;
     }
 
     /* ******************************** */
@@ -1085,10 +1088,28 @@ i {
     .circle {
       width: 8vw;
       height: 8vw;
+      line-height: 40px;
+    }
+
+    .circle p {
+      font-size: 3vw;
     }
 
     /* About us PAGE */
 
+    .we-are-kulia, .our-place, .surroundings {
+      flex-direction: column;
+      gap: 2vw;
+    }
+
+    .we-are-kulia img{
+      align-self: center;
+    }
+    .surroundings>div:nth-child(2) {
+      flex-direction: row;
+      gap: 5vh;
+      justify-content: center;
+    }
 
     .introduction3 {
       padding-top: 15vh;
@@ -1108,23 +1129,28 @@ i {
       padding: 8vw;
     }
 
+    .we-are-kulia img {
+      width: 45vw;
+      justify-content: center;
+    }
+
     .event-div p {
       display: block;
     }
 
-    .surroundings img {
-      height: 45%;
-      width: 100%;
+    .about-h2 {
+      margin-bottom: 2vh;
     }
+
 
   }
 
   /*********** MEDIA QUERIES FOR BIGGER TABLET***********/
 
-  @media screen and (min-width: 650px) and (max-width: 1080px) {
+  @media screen and (min-width: 650px) {
 
     h1 {
-      font-size: 6vw;
+      font-size: 5vw;
     }
 
     h1 span {
@@ -1132,20 +1158,20 @@ i {
     }
 
     h2 {
-      font-size: 4vw;
+      font-size: 3.5vw;
     }
 
     h3,
     h5 {
-      font-size: 3.5vw;
-    }
-
-    h4 {
       font-size: 3vw;
     }
 
+    h4 {
+      font-size: 2.5vw;
+    }
+
     p {
-      font-size: 2vw;
+      font-size: 1.5vw;
     }
 
     /* sections paddings */
@@ -1295,39 +1321,15 @@ i {
       gap: 4vh;
     }
 
-    .menu-home h4 {
-      padding-top: 7vw;
-    }
-
+  
     /* ******************************** */
     /* EVENTS  */
 
-    .event-div span {
+    /* .event-div span {
       line-height: 3.5vh;
       font-size: 2.5vw;
       font-family: "Quicksand", sans-serif;
-    }
-
-    .event-card img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .event-card {
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
-      padding: 1vw;
-      border-radius: 2%;
-      -webkit-border-radius: 2%;
-      -moz-border-radius: 2%;
-      -ms-border-radius: 2%;
-      -o-border-radius: 2%;
-    }
-
-    .container {
-      flex-direction: row;
-    }
+    } */
 
     /* ******************************** */
     /* FOOTER */
@@ -1388,19 +1390,13 @@ i {
     .introduction2 .h1-line {
       top: 10%;
     }
-
-    .sandwich-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-    }
-
-    .rest-menu-container {
+  
+    /* .rest-menu-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       gap: 3vw;
-      /* width: fit-content; */
+      width: fit-content;
       justify-content: center;
     }
 
@@ -1411,43 +1407,12 @@ i {
       gap: 2vh;
       border: 1px solid rgba(0, 0, 0, 0.144);
       border-radius: 25px 25px 25px 25px;
-    }
+    } */
 
     .circle {
       width: 8vw;
       height: 8vw;
     }
-
-    /* About us PAGE */
-
-
-    .introduction3 {
-      padding-top: 15vh;
-    }
-
-    .introduction3>.h1-line {
-      margin-left: 9vw;
-    }
-
-    .desktop-about-text {
-      display: block;
-    }
-
-    .we-are-kulia,
-    .our-place,
-    .surroundings {
-      padding: 8vw;
-    }
-
-    .event-div p {
-      display: block;
-    }
-
-    .surroundings img {
-      height: 45%;
-      width: 100%;
-    }
-
   }
 
 
@@ -1701,9 +1666,9 @@ i {
       column-gap: 2vw;
     }
 
-    .menu-home h4 {
+    /* .menu-home h4 {
       padding-top: 5vw;
-    }
+    } */
 
     .teaser-vegan,
     .teaser-chicken,
@@ -1793,16 +1758,7 @@ i {
       height: auto;
     }
 
-    .index .event-card img {
-      width: 100%;
-      /* height: auto; */
-    }
 
-    .container {
-      flex-direction: row;
-      gap: 5vh;
-      justify-content: center;
-    }
 
     .event-div p {
       display: none;
@@ -1976,7 +1932,7 @@ i {
     .rest-menu-container {
       background-color: white;
       gap: 4vh;
-      flex-direction: column;
+      flex-direction: row;
     }
 
     .rest-menu-container article {
@@ -2022,10 +1978,6 @@ i {
 
     /* About us PAGE */
 
-    .our-place {
-      background-color: white;
-    }
-
     .introduction3 {
       padding-top: 22vh;
     }
@@ -2035,66 +1987,14 @@ i {
       margin-left: 7vw;
     }
 
-    .about-h2 {
-      margin-bottom: 4vh;
-    }
-
-    .desktop-about-text {
-      display: none;
-    }
-
-    .four-amigos-image {
-      width: 85vw;
-      margin-left: 2vw;
-    }
-
     .we-are-kulia,
     .our-place,
     .surroundings {
       padding: 6vw;
     }
 
-    .we-are-kulia p,
-    .our-place p {
-      margin: 3vh 0;
-    }
-
     .our-place img {
-      width: 100%;
-    }
-
-    .surroundings h2,
-    h4 {
-      color: var(--dark-brown);
-    }
-
-    .surroundings>div:nth-child(2) {
-      flex-direction: column;
-      gap: 15vh;
-      justify-items: center;
-    }
-
-    .sourrondings-article {
-      flex-direction: column-reverse;
-      align-items: center;
-      gap: 3vh;
-    }
-
-    .sourrondings-article>div {
-      gap: 2vh;
-    }
-
-    .surroundings article {
-      flex-direction: column;
-    }
-
-    .surroundings-img {
-      height: 70%;
-      width: 100%;
-    }
-
-    .event-div .surroundings-p {
-      display: block;
+      width: 50%;
     }
 
     .about-btn {
