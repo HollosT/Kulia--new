@@ -296,7 +296,7 @@ i {
   row-gap: 4vw;
 }
 
-.h1-container { 
+.h1-container {
   align-self: flex-end;
   justify-self: center;
 }
@@ -344,21 +344,7 @@ i {
 }
 
 @keyframes truck {
-  /* 85% {
-    transform: translateX(3vw);
-    -webkit-transform: translateX(3vw);
-    -moz-transform: translateX(3vw);
-    -ms-transform: translateX(3vw);
-    -o-transform: translateX(3vw);
-  }
 
-  95% {
-    transform: translateX(-3vw);
-    -webkit-transform: translateX(-3vw);
-    -moz-transform: translateX(-3vw);
-    -ms-transform: translateX(-3vw);
-    -o-transform: translateX(-3vw);
-  } */
 
   100% {
     transform: translateX(25vw);
@@ -366,7 +352,7 @@ i {
     -moz-transform: translateX(25vw);
     -ms-transform: translateX(25vw);
     -o-transform: translateX(25vw);
-}
+  }
 }
 
 
@@ -1660,6 +1646,38 @@ h4 {
     z-index: 100;
   }
 
+  .truck-animation {
+    animation: truck 1s ease-in-out;
+    -webkit-animation: truck 1.3s ease-in forwards;
+  }
+
+  @keyframes truck {
+    85% {
+      transform: translateX(3vw);
+      -webkit-transform: translateX(3vw);
+      -moz-transform: translateX(3vw);
+      -ms-transform: translateX(3vw);
+      -o-transform: translateX(3vw);
+    }
+
+    95% {
+      transform: translateX(-3vw);
+      -webkit-transform: translateX(-3vw);
+      -moz-transform: translateX(-3vw);
+      -ms-transform: translateX(-3vw);
+      -o-transform: translateX(-3vw);
+    }
+
+
+    100% {
+      transform: translateX(0vw);
+      -webkit-transform: translateX(0vw);
+      -moz-transform: translateX(0vw);
+      -ms-transform: translateX(0vw);
+      -o-transform: translateX(0vw);
+    }
+  }
+
   .hero-img h1 {
     position: absolute;
     top: 25%;
@@ -1757,7 +1775,7 @@ h4 {
 
   /* ********************* */
   /* EVENTS */
-  .event-card img {
+  .index .event-card img {
     /* width: 16vw; */
     max-width: 21vw;
   }

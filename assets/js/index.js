@@ -12,8 +12,6 @@ window.addEventListener('load', function() {
   setTimeout(function() {
     truck.classList.add('truck-animation')
   }, 500)
-
-
 })
   
 function drawEvents(allevents) {
