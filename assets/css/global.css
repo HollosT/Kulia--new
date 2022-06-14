@@ -1813,24 +1813,27 @@ i {
 
     footer {
       background-color: var(--dark-brown);
-      /* color: white; */
       position: relative;
       width: 100%;
-      /* min-height:; */
+      padding: 3vw;
     }
 
     /* ******************************** */
     /* FOOTER */
 
-    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 25% 50% 25%;
+      grid-template-rows: 2;
+    }
 
     .opening-hours {
-      justify-self: center;
+      justify-self: start;
     }
 
     footer>address {
       justify-self: center;
-      margin-left: 18vw;
+      margin-left: 0;
     }
 
     .opening-hours,
@@ -1854,11 +1857,11 @@ i {
     #map,
     address,
     .opening-hours {
-      margin-bottom: 3vh;
+      margin-bottom: 2vw;
     }
 
     footer h4 {
-      margin-bottom: 1vh;
+      margin-bottom: 1vw;
     }
 
     .opening-hours>div>p {
