@@ -380,7 +380,7 @@ i {
 }
 
 /* For smaller mobile devices */
-@media screen and (min-width: 300px)  and (max-width: 480){
+@media screen and (min-width: 300px) and (max-width: 480) {
   .nav-bar {
     padding-bottom: 20px;
     padding: 2vw;
@@ -730,10 +730,12 @@ header {
 .surroundings {
   padding: 6vw;
 }
+
 .we-are-kulia img {
   width: 100%;
   height: 25vh;
 }
+
 .surroundings h2,
 h4 {
   color: var(--dark-brown);
@@ -1419,15 +1421,15 @@ h4 {
 
   /* font sizes */
   h1 {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 
   h1 span {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   h2 {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 
   h3 {
@@ -1435,15 +1437,15 @@ h4 {
   }
 
   h4 {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
   }
 
   h5 {
-    font-size: 1.4vw
+    font-size: 1.2vw
   }
 
   p {
-    font-size: 1.2vw;
+    font-size: 1vw;
   }
 
   .btn {
@@ -1546,15 +1548,16 @@ h4 {
     grid-template-rows: 2fr 1fr 1fr;
     padding-top: 25vh;
   }
-  
+
   .h1-container {
     grid-column-start: 2;
     grid-column-end: 3;
   }
- 
+
   .truck-palm-container {
     grid-row-start: 3;
     grid-row-end: 2;
+
   }
 
   .h4-container {
@@ -1562,6 +1565,7 @@ h4 {
     grid-column-end: 3;
     grid-row-start: 3;
   }
+
   .truck {
     width: 22vw;
   }
@@ -1583,10 +1587,10 @@ h4 {
       -moz-transform: translateX(6vw);
       -ms-transform: translateX(6vw);
       -o-transform: translateX(6vw);
-      }
+    }
   }
 
-  .introduction h4 > br {
+  .introduction h4>br {
     display: none;
   }
 
@@ -1638,28 +1642,30 @@ h4 {
     gap: 2vw;
   }
 
-  .index .event-card img { 
-     width: 100%;
-      height: 20vw;
+  .index .event-card img {
+    width: 100%;
+    height: auto;
   }
 
   .event-card {
     flex-direction: column;
-    width: 22vw;
+    width: 24vw;
     border: 1px solid rgba(0, 0, 0, 0.144);
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.144);
   }
 
   .event-div span {
     font-size: 1.5vw;
-}
+  }
 
   .event-div {
     gap: 1.5vh;
-    padding: 1.5vw;
+    padding: 1vw;
   }
+
   .event-div p {
     display: block;
+    font-size: 1vw;
   }
 
   /* ******************************** */
@@ -1668,8 +1674,9 @@ h4 {
   .footer-grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-     column-gap: 3vw;
+    column-gap: 3vw;
   }
+
   .opening-hours {
     justify-self: center;
   }
@@ -1718,10 +1725,11 @@ h4 {
   /************************ MENU PAGE ***************/
   .introduction2 h1 {
     margin-bottom: 0;
-}
+  }
+
   .underline {
-   width: 25vw;
-   margin-left: 35vw;
+    width: 25vw;
+    margin-left: 35vw;
     /* margin-bottom: 1vh; */
   }
 
@@ -1763,7 +1771,7 @@ h4 {
     border-radius: 25px 25px 25px 25px;
   }
 
- 
+
   .menu-page p {
     margin-bottom: 3vh;
   }
@@ -1791,70 +1799,70 @@ h4 {
     margin-bottom: 2vh;
   }
 
-/* ******************************** */
-/* About us PAGE */
+  /* ******************************** */
+  /* About us PAGE */
 
-.introduction3 {
-  padding: 14vh 5vw 5vh;
-}
+  .introduction3 {
+    padding: 14vh 5vw 5vh;
+  }
 
-.desktop-about-text {
-  display: block;
-}
+  .desktop-about-text {
+    display: block;
+  }
 
-.we-are-kulia {
-  display: flex;
-  flex-direction: column;
-  gap: 1vw;
-}
+  .we-are-kulia {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
 
-.we-are-kulia>div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: auto 7vw;
-  column-gap: 4vw;
-}
+  .we-are-kulia>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto 7vw;
+    column-gap: 4vw;
+  }
 
-.we-are-kulia img {
+  .we-are-kulia img {
     width: 100%;
     height: auto;
-}
+  }
 
-.we-are-kulia p {
-  margin: 1vh 5vw 3vh 0;
-}
+  .we-are-kulia p {
+    margin: 1vh 5vw 3vh 0;
+  }
 
 
-.sourrondings-article {
-  margin: 3vw;
-  flex-direction: column;
-  background-color: var(--cards-beige);
-  border: 1px solid #dccfc2;
-}
+  .sourrondings-article {
+    margin: 3vw;
+    flex-direction: column;
+    background-color: var(--cards-beige);
+    border: 1px solid #dccfc2;
+  }
 
-.surroundings img {
-  height: 100%;
-  width: 100%;
-}
+  .surroundings img {
+    height: 100%;
+    width: 100%;
+  }
 
-.surroundings-p {
-  display: block;
-  margin-top: 2vw;
-}
+  .surroundings-p {
+    display: block;
+    margin-top: 2vw;
+  }
 
-.surroundings>div:nth-child(2) {
-  flex-direction: row;
-  justify-content: center;
-}
+  .surroundings>div:nth-child(2) {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-.sourrondings-article div {
-  padding: 2vw;
-}
+  .sourrondings-article div {
+    padding: 2vw;
+  }
 
-.about-btn {
-  flex-direction: column;
-  margin: 10vh 0;
-  gap: 2vh;
-}
+  .about-btn {
+    flex-direction: column;
+    margin: 10vh 0;
+    gap: 2vh;
+  }
 
 }
