@@ -986,7 +986,7 @@ h4 {
   }
 
 
-  .event-card {
+  .events-section .event-card {
     flex-direction: column;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
     width: 40vw;
@@ -1105,6 +1105,9 @@ h4 {
   }
 
   .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 8vw;
     height: 8vw;
     line-height: 40px;
@@ -1133,6 +1136,7 @@ h4 {
   .event-card {
     width: 70vw;
     background-color: white;
+    box-shadow: 3px 3px 7px rgb(0 0 0 / 14%);
   }
 
   .introduction3 {
@@ -1174,28 +1178,31 @@ h4 {
 @media screen and (min-width: 650px) and (max-width: 1080px) {
 
   h1 {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
 
   h1 span {
-    font-size: 7vw;
+    font-size: 6vw;
   }
 
   h2 {
     font-size: 3.5vw;
   }
 
-  h3,
-  h5 {
+  h3 {
     font-size: 3vw;
   }
 
   h4 {
-    font-size: 2.5vw;
+    font-size: 2.2vw;
+  }
+
+  h5 {
+    font-size: 2vw;
   }
 
   p {
-    font-size: 1.5vw;
+    font-size: 1.8vw;
   }
 
   /* sections paddings */
@@ -1208,8 +1215,8 @@ h4 {
   /* FUNCTIONAL CLASSES */
 
   .btn {
-    padding: 2vw 4vw;
-    font-size: 3vw;
+    padding: 1vw 3vw;
+    font-size: 2.5vw;
   }
 
   .underline {
@@ -1219,37 +1226,37 @@ h4 {
   }
 
   .fa-caret-down {
-    width: 4vw;
+    font-size: 10vw;
   }
 
   .nav-bar,
   .desktop-nav {
-    padding: 2.5vw;
+    padding: 1.5vw;
   }
 
   /* nav */
   /* Navigation */
   .mobile-nav {
     padding-top: 13vw;
-    row-gap: 8vw;
+    row-gap: 5vw;
     justify-content: space-around;
   }
 
   #mobile {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   .kulia-logo-mobile {
-    width: 7vw;
+    width: 8vw;
   }
 
   /* List item on the navigaton */
   .mobile-nav>div {
-    row-gap: 7vw;
+    row-gap: 5vw;
   }
 
   .mobile-nav>div>a {
-    font-size: 7vw;
+    font-size: 5.5vw;
   }
 
   .menu-social {
@@ -1257,57 +1264,49 @@ h4 {
   }
 
   .menu-social>a {
-    padding: 3vw 0;
+    padding: 2vw 0;
   }
 
   .menu-social>a>i {
-    font-size: 6vw;
+    font-size: 4.5vw;
   }
 
   .menu-social-h2 {
-    font-size: 4vw;
+    font-size: 3vw;
+  }
+
+  .home-introduction {
+    row-gap: 0;
+    padding-top: 10vw;
+  }
+
+  .h1-container {
+    align-self: flex-end;
   }
 
   .palm {
-    width: 55vw;
-    top: 30%;
-    position: absolute;
+    width: 35vw;
   }
 
   .truck {
-    width: 40vw;
-    top: 40%;
-    left: 20%;
-    position: absolute;
-  }
+    width: 25vw;
+}
 
-  .hero-img h1 {
-    line-height: 7vw;
-    top: 20%;
-    left: 30%;
-  }
+@keyframes truck {
 
-  .hero-img .h1-line {
-    position: absolute;
-    left: 29%;
-    top: 30%;
-  }
 
-  .introduction h4 {
-    left: 25%;
-    top: 80%;
-  }
+  100% {
+    transform: translateX(10vw);
+    -webkit-transform: translateX(10vw);
+    -moz-transform: translateX(10vw);
+    -ms-transform: translateX(10vw);
+    -o-transform: translateX(10vw);
+}
+}
 
   .introduction h4>br {
     display: none;
   }
-
-  .fa-caret-down {
-    font-size: 15vw;
-    left: 45%;
-    top: 83%;
-  }
-
 
 
   /******** MENU SECTON **********/
@@ -1338,41 +1337,90 @@ h4 {
   }
 
   .menu-home h2 {
-    line-height: 4.5vw;
+    line-height: 4vw;
   }
 
   .menu-home {
-    gap: 4vh;
+    gap: 3vh;
   }
 
+  .menu-home h4 {
+    padding-top: 4vw;
+  }
 
   /* ******************************** */
   /* EVENTS  */
+
+  .event-div {
+    padding: 1.5vw 1vw;
+  }
+
+  .event-div span {
+    line-height: 3.5vh;
+    font-size: 2.5vw;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .index .event-card img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .events-section .event-card {
+    flex-direction: column;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    width: 35vw;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: center;
+  }
 
   /* ******************************** */
   /* FOOTER */
 
 
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 50% 10%;
+    grid-template-areas: 
+    "hours contact"
+    "map map"
+    ;
+    padding-top: 5vw;
+  }
+
+  .opening-hours {
+    grid-area: hours;
+  }
+
+  footer > address {
+    grid-area: contact;
+    margin-left: 0;
+  }
+
+  #map {
+    grid-area: map;
+  }
+  
   .opening-hours,
-  address {
+  address,
+  address .flex {
     gap: 2vh;
   }
 
-  footer {
-    grid-template-columns: 1fr 1fr 1fr;
+  .opening-hours {
+    margin-bottom: 10vw;
   }
 
   .fa-envelope,
   .fa-phone,
   .fa-facebook-f,
   .fa-instagram {
-    font-size: 1vw;
-  }
-
-  #map,
-  address,
-  .opening-hours {
-    margin-bottom: 4vh;
+    font-size: 3.5vw;
   }
 
   footer h4 {
@@ -1394,11 +1442,14 @@ h4 {
   #map {
     height: 40vh;
     width: 100%;
+    align-self: flex-end;
   }
 
+  footer span {
+    align-self: center;
+  }
 
-  /* ******************************** */
-  /************************ MENU PAGE ***************/
+  /************************ MENU PAGE ************************/
   .introduction2 {
     padding: 12vh 4vw 4vh;
   }
@@ -1411,30 +1462,102 @@ h4 {
     top: 10%;
   }
 
-  /* .rest-menu-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 3vw;
-      width: fit-content;
-      justify-content: center;
-    }
-
-    .rest-menu-container article {
-      width: 100%;
-      flex-direction: column;
-      padding: 3vh 2vw;
-      gap: 2vh;
-      border: 1px solid rgba(0, 0, 0, 0.144);
-      border-radius: 25px 25px 25px 25px;
-    } */
-
-  .circle {
-    width: 8vw;
-    height: 8vw;
+  .sandwich-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
+  .sandwich-container li,
+  .rest-menu-container li {
+    font-size: 1.8vw;
+  }
+
+  .rest-menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3vw;
+    /* width: fit-content; */
+    justify-content: center;
+  }
+
+  .rest-menu-container article {
+    width: 100%;
+    flex-direction: column;
+    padding: 3vh 2vw;
+    gap: 2vh;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 25px 25px 25px 25px;
+  }
+
+  .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    height: 5vw;
+    line-height: 40px;
+  }
+  
+  .circle p {
+    font-size: 2vw;
+  }
+
+  /* About us PAGE */
+
+  .we-are-kulia, .our-place {
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .surroundings>div:nth-child(2) {
+    flex-direction: column;
+    gap: 10vh;
+  }
+
+  .surroundings .flex {
+    align-items: center;
+  }
+
+  .event-card {
+    width: 70vw;
+    background-color: white;
+    box-shadow: 3px 3px 7px rgb(0 0 0 / 14%);
+  }
+
+  .introduction3 {
+    padding-top: 15vh;
+  }
+
+  .introduction3>.h1-line {
+    margin-left: 9vw;
+  }
+
+  .desktop-about-text {
+    display: block;
+  }
+
+  .we-are-kulia,
+  .our-place,
+  .surroundings {
+    padding: 8vw;
+  }
+
+  .we-are-kulia img {
+    width: 100%;
+    height: auto;
+  }
+
+  .event-div p {
+    display: block;
+  }
+
+  .about-h2 {
+    margin-bottom: 2vh;
+  }
 }
+
 
 
 /* MEDIA QUERIES FOR DESKTOP */
@@ -1802,6 +1925,9 @@ h4 {
   }
 
   .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 3vw;
     height: 3vw;
   }
@@ -1881,7 +2007,6 @@ h4 {
 
   .sourrondings-article div {
     padding: 2vw;
-
   }
 
   .about-btn {
