@@ -1603,6 +1603,7 @@ h4 {
 
   .menu-teaser {
     display: block;
+    margin: 0 15vw;
   }
 
   .items {
@@ -1737,6 +1738,7 @@ h4 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2vw;
     padding: 0;
+    align-self: center;
   }
 
   .sandwich-container p,
