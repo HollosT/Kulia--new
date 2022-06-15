@@ -733,7 +733,7 @@ header {
 
 .we-are-kulia img {
   width: 100%;
-  height: 25vh;
+  height: auto;
 }
 
 .surroundings h2,
@@ -1838,7 +1838,7 @@ h4 {
   .sourrondings-article {
     margin: 3vw;
     flex-direction: column;
-    background-color: var(--cards-beige);
+    background-color: white;
     border: 1px solid #dccfc2;
   }
 
