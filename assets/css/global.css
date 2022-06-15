@@ -770,6 +770,12 @@ h4 {
   display: block;
 }
 
+.wave-transition4 {
+  position: relative;
+  width: 100%;
+  margin-bottom: -7px;
+}
+
 .about-btn {
   margin-top: 10vh;
   margin-bottom: 6vh;
@@ -1145,7 +1151,6 @@ h4 {
     margin-bottom: 2vh;
   }
 
-
 }
 
 /*********** MEDIA QUERIES FOR BIGGER TABLET***********/
@@ -1412,6 +1417,7 @@ h4 {
     width: 8vw;
     height: 8vw;
   }
+
 }
 
 
@@ -1868,4 +1874,7 @@ h4 {
     gap: 2vh;
   }
 
+  .surroundings {
+    position: relative;
+  }
 }
