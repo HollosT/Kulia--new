@@ -1649,13 +1649,13 @@ h4 {
 
   .event-card {
     flex-direction: column;
-    width: 20vw;
+    width: 19vw;
     border: 1px solid rgba(0, 0, 0, 0.144);
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.144);
   }
 
   .event-div span {
-    font-size: 1.1vw;
+    font-size: 1vw;
   }
 
   .event-div {
@@ -1665,7 +1665,7 @@ h4 {
 
   .event-div p {
     display: block;
-    font-size: 1vw;
+    font-size: .7vw;
   }
 
   /* ******************************** */
