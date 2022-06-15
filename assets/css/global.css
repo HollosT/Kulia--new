@@ -1666,9 +1666,9 @@ h4 {
   }
 
   .truck-animation {
-    animation: truck 1s ease-in-out;
-    -webkit-animation: truck 1.3s ease-in forwards;
-  }
+    animation: truck 1s ease-out forwards;
+    -webkit-animation: truck 1s ease-out forwards;
+}
 
   @keyframes truck {
     100% {
