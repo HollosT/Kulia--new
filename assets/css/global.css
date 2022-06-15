@@ -1653,6 +1653,7 @@ h4 {
     width: 19vw;
     border: 1px solid rgba(0, 0, 0, 0.144);
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.144);
+    background-color: white;
   }
 
   .event-div span {
@@ -1838,7 +1839,6 @@ h4 {
   .sourrondings-article {
     margin: 3vw;
     flex-direction: column;
-    background-color: white;
     border: 1px solid #dccfc2;
   }
 
@@ -1859,6 +1859,7 @@ h4 {
 
   .sourrondings-article div {
     padding: 2vw;
+
   }
 
   .about-btn {
