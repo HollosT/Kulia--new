@@ -4,12 +4,17 @@
 // ***************************************** //
 // ******** Fetching data for the pages ***************//
 // Determining what posts have to be fetched
+
+
+
+
+
 const initMenu = function() {
-  fetchingData(33)
-  fetchingData(39)
-  fetchingData(41)
-  fetchingData(40)
-  fetchingData(42)
+  fetchingData(5)
+  fetchingData(6)
+  fetchingData(7)
+  fetchingData(8)
+  fetchingData(9)
 
 }
 initMenu()
@@ -56,9 +61,9 @@ function drawMessyFries(fries) {
   for (let i = 0; i < fries.length; i++){
   const messyFries = `
    <article class="flex">
-  <h2 class="uppercase text-align">${fries[i].acf.image.title}</h2>
-  <img src="${fries[i].acf.image.url}" class="teaser-fries" alt="${fries[i].acf.image.alt}" />
-  <h4 class="uppercase">${fries[i].acf.image.title}</h4>
+  <h2 class="uppercase text-align">SIDES</h2>
+  <img src="${fries[i].acf.image}" class="teaser-fries" alt="${fries[i].acf.title}" />
+  <h4 class="uppercase">${fries[i].acf.title}</h4>
   <h5 class="uppercase">Ingredients</h5>
     
   <div class="prices flex">
@@ -77,8 +82,8 @@ function drawMealCards(meals) {
   for (let i = 0; i < meals.length; i++) {
       let sandwichCard = `
       <article class="flex">
-             <img src="${meals[i].acf.image.url}" class="teaser-vegan" alt="${meals[i].acf.image.title}"/>
-             <h4 class="uppercase">${meals[i].acf.image.title}</h4>
+             <img src="${meals[i].acf.image}" class="teaser-vegan" alt="${meals[i].acf.title}"/>
+             <h4 class="uppercase">${meals[i].acf.title}</h4>
              <p>
                 ${meals[i].acf.description}
             </p>

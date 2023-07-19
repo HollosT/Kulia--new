@@ -2,7 +2,7 @@
 const now = new Date().getTime()
 
 const initIndex = function() {
-  fetchingData(35)
+  fetchingData(3)
   }
   initIndex()
 
@@ -32,7 +32,7 @@ function drawEvents(allevents) {
       const ascendingEvents = futureEvents.sort((a, b) => a.milliSeconds - b.milliSeconds)
 
   if(ascendingEvents.length > 1) {
-    drawEventsCard(ascendingEvents, 2)
+    drawEventsCard(ascendingEvents, 3)
   } else if(ascendingEvents.length = 1) {
     drawEventsCard(ascendingEvents, 1)
    }  else {
@@ -44,7 +44,7 @@ function drawEventsCard(event, numberOfCard) {
   for(let i = 0; i < numberOfCard; i++) {
     let eventArticle =`
     <article class="event-card flex">
-          <img src="${event[i].image.url}" alt="${event[i].image.alt}" />
+          <img src="${event[i].image}" alt="${event[i].image}" />
           <div class="event-div flex">
             <h3 class="uppercase">${event[i].name}</h3>
             <h5>${event[i].date.replaceAll('-', '/')}</h5>
